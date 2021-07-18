@@ -5,9 +5,11 @@ Discord bot for managing simulcasts and discussion of currently airing anime. Av
 `!postseasonallist` 
 > Posts a list of all shows from the current season. Each list entry will be a separate message, allowing for individual reactions. Each show will be categrorized as TV, Short, Movie, OVA, ONA, Special, or Music Video.
 
+`!deletelist` 
+> Deletes all the posts the bot has made in the current channel.
+
 ## Not Yet Implemented
 * Create discussion channel when enough interest in a particular show has been registered
-* Command to delete an old list when the new season starts
 * Configuration options to personalise the bot, e.g. restrict list to only TV shows and Shorts, or include AniList/MAL links in the list
 * Add a feature request command
 
