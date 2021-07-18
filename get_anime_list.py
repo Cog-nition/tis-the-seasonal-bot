@@ -18,6 +18,10 @@ SHOW_FORMATS = [
 def pull_airing_data():
     #path of your chromedriver installation
     DRIVER_PATH = os.getenv('DRIVER_PATH')
+    chrome_options = Options()
+    chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--no-sandbox')
+    chrome_options.add_argument('--disable-dev-shm-usage')
     driver = webdriver.Chrome(executable_path=DRIVER_PATH)
     ## TODO: use time to decide which season we're currently in and modify url
     url ='https://anilist.co/search/anime?season=SUMMER'
