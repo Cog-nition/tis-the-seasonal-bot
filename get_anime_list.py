@@ -21,7 +21,6 @@ def pull_airing_data():
     DRIVER_PATH = os.getenv('DRIVER_PATH')
     chrome_options = Options()
     chrome_options.add_argument('--no-sandbox')
-    chrome_options.add_argument("--remote-debugging-port=9222")
     chrome_options.add_argument('--disable-dev-shm-usage')
     driver = webdriver.Chrome(executable_path=DRIVER_PATH,chrome_options=chrome_options)
     ## TODO: use time to decide which season we're currently in and modify url
